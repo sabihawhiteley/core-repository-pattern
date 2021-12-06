@@ -1,4 +1,4 @@
-namespace RepositoryPattern.SampleExample
+namespace RepositoryPattern.SampleProject
 {
     public interface IUnitOfWork<TDbContext> where TDbContext : DbContext
     {
