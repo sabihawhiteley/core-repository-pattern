@@ -53,7 +53,7 @@ namespace RepositoryPattern.SampleProject
             return GetEnumerator();
         }
 
-        public IAsyncEnumerator<TEntity> GetAsyncEnumerator(CancellationToken cancellationToken = new CancellationToken())
+        public IAsyncEnumerator<TEntity> GetAsyncEnumerator(CancellationToken cancellationToken)
         {
             return _dbSet.AsAsyncEnumerable().GetAsyncEnumerator(cancellationToken);
         }
